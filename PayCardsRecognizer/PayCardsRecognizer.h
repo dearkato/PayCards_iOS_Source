@@ -46,6 +46,7 @@ typedef NS_OPTIONS(NSUInteger, PayCardsRecognizerDataMode) {
 - (instancetype _Nonnull)initWithDelegate:(id<PayCardsRecognizerPlatformDelegate> _Nonnull)delegate recognizerMode:(PayCardsRecognizerDataMode)recognizerMode resultMode:(PayCardsRecognizerResultMode)resultMode container:(UIView * _Nonnull)container frameColor:(UIColor * _Nonnull)frameColor;
 
 @property (nonatomic, weak, nullable) id<PayCardsRecognizerPlatformDelegate> delegate;
+@property (nonatomic) int bytesPerRow;
 
 - (void)startCamera;
 
@@ -60,6 +61,8 @@ typedef NS_OPTIONS(NSUInteger, PayCardsRecognizerDataMode) {
 - (void)setOrientation:(UIInterfaceOrientation)orientation;
 
 - (void)turnTorchOn:(BOOL)on withValue:(float)value;
+
+- (void)setBytesPerRow:(int)bytesPerRow;
 
 @end
 
