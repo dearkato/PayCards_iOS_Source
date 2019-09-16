@@ -10,7 +10,5 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, '8.0'
   spec.ios.deployment_target = '8.0'
   spec.requires_arc     = true
-  spec.vendored_frameworks = 'Source/PayCardsRecognizer.framework'
-  spec.ios.public_header_files = 'PayCardsRecognizer.framework/Headers/*.h'
-  spec.source_files     = 'PayCardsRecognizer.framework/Headers/*.h'
+  spec.vendored_frameworks = 'PayCardsRecognizer.framework'
 end
