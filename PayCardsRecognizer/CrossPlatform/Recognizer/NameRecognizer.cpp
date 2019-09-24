@@ -247,20 +247,20 @@ shared_ptr<INeuralNetworkResultList> CNameRecognizer::Process(cv::Mat& matrix, v
                     for (INeuralNetworkResultList::ResultIterator it = charResult->Begin(); it != charResult->End(); ++it) {
                         
                         shared_ptr<INeuralNetworkResult> resultItem = *it;
-                        int charIdx = resultItem->GetMaxIndex();
+//                         int charIdx = resultItem->GetMaxIndex();
                         
-                        if (charIdx > 0) charsCount++;
+//                         if (charIdx > 0) charsCount++;
                         
-                        shared_ptr<INeuralNetworkResult> result = *it;
+//                         shared_ptr<INeuralNetworkResult> result = *it;
                         
-                        if (result->GetMaxProbability() < threshold) {
-                            non++;
-                        }
+//                         if (result->GetMaxProbability() < threshold) {
+//                             non++;
+//                         }
 
-                        resultStr += alphabet[charIdx];
+//                         resultStr += alphabet[charIdx];
 
                 
-                        resultStr0 += "  " + alphabet[charIdx] + "  ";
+//                         resultStr0 += "  " + alphabet[charIdx] + "  ";
                         
                         int secondIndex;
                         float probabilityDiff;
